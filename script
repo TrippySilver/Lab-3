@@ -38,3 +38,4 @@ Createtable = """CREATE TABLE IF NOT EXISTS people (
                  updated_at datetime NOT NULL,
                  ipv4 text
                  )"""
+fake = Faker()
