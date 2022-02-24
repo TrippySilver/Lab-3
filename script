@@ -27,4 +27,14 @@ Createtable = """CREATE TABLE IF NOT EXISTS people (
                  name text NOT NULL,
                  email text NOT NULL,
                  address text NOT NULL,
-                 
+                 city text NOT NULL,
+                 province text NOT NULL,
+                 country text NOT NULL,
+                 phone text,
+                 bio text,
+                 dob date NOT NULL,
+                 heatmap integer,
+                 created_at datetime NOT NULL,
+                 updated_at datetime NOT NULL,
+                 ipv4 text
+                 )"""
