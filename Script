@@ -1,0 +1,5 @@
+import sqlite3
+import pprint
+myConnection = sqlite3.connect('social_network.db')
+myCursor = myConnection.cursor()
+selectStatement = """SELECT ... """
