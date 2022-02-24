@@ -1,0 +1,30 @@
+!pip install faker
+from faker import Faker
+import sqlite3
+import pprint
+from pprint import pprint
+from datetime import datetime
+
+myConnection = sqlite3.connect('social_network.db')
+myCursor = myConnection.cursor()
+
+addPersonQuery = """INSERT INTO people (name, 
+                      email, 
+                      address, 
+                      city, 
+                      province, 
+                      country, 
+                      phone, 
+                      bio,
+                      dob,
+                      heatmap,
+                      created_at, 
+                      updated_at, 
+                      ipv4)
+                  VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);"""
+Createtable = """CREATE TABLE IF NOT EXISTS people (
+                 id integer PRIMARY KEY,
+                 name text NOT NULL,
+                 email text NOT NULL,
+                 address text NOT NULL,
+                 
